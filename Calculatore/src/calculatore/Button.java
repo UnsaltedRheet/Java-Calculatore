@@ -17,7 +17,7 @@ import javax.swing.*;
  */
 public class Button extends JPanel
 {
-    private JButton push;
+    private JButton button;
     private String name;
     //-----------------------------------------------------------------
     //  Constructor: Sets up the GUI.
@@ -25,9 +25,10 @@ public class Button extends JPanel
     public Button (String nm)
     {    
         name = nm;
-        push = new JButton (name);
-        push.addActionListener (new ButtonListener());
-        add (push);
+        
+        button = new JButton (name);
+        button.addActionListener (new ButtonListener());
+        add (button);
         
         setPreferredSize (new Dimension(300, 40));
         
