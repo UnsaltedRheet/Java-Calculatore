@@ -22,8 +22,9 @@ public class Button extends JPanel
     //-----------------------------------------------------------------
     //  Constructor: Sets up the GUI.
     //-----------------------------------------------------------------
-    public Button (String name)
+    public Button (String nm)
     {    
+        name = nm;
         push = new JButton (name);
         push.addActionListener (new ButtonListener());
         add (push);
