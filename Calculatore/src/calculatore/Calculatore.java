@@ -15,7 +15,7 @@ import javax.swing.*;
 
 public class Calculatore
 {
-
+    //just a test
     /**
      * @param args the command line arguments
      */
