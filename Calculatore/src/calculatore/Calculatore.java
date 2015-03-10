@@ -5,9 +5,12 @@
  */
 package calculatore;
 
+import java.awt.*;
+import javax.swing.*;
+
 /**
  *
- * @author Nickno
+ * @author Nicholas & Rhett
  */
 public class Calculatore
 {
@@ -20,6 +23,8 @@ public class Calculatore
         // TODO code application logic here
         System.out.println("BOOBS!!!");
         //COMMENTS GO LIEK DIS BRUH
+        
+        
         
     }
     
