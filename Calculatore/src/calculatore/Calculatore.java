@@ -13,6 +13,10 @@ import javax.swing.*;
  * @author Nicholas & Rhett
  */
 
+class Button extends JPanel
+{
+    
+}
 
 
 public class Calculatore
