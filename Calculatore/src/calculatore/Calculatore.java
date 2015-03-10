@@ -29,7 +29,7 @@ public class Calculatore
         
         // Set up first subpanel
          JPanel outputPanel = new JPanel();
-         outputPanel.setPreferredSize (new Dimension(300, 50));
+         outputPanel.setPreferredSize (new Dimension(180, 50));
          outputPanel.setBackground (Color.green);
          JLabel label1 = new JLabel ("OUTPUT GOES HERE");
          outputPanel.add (label1);
@@ -37,7 +37,7 @@ public class Calculatore
          
          // Set up second subpanel
          JPanel subPanel2 = new JPanel();
-         subPanel2.setPreferredSize (new Dimension(150, 100));
+         subPanel2.setPreferredSize (new Dimension(180, 230));
          subPanel2.setBackground (Color.red);
          JLabel label2 = new JLabel ("Two");
          subPanel2.add (label2);
