@@ -28,10 +28,20 @@ public class Calculatore
         frame.setResizable(false);
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         
-        // Set up first subpanel
+        // Color palette
+        // http://www.colourlovers.com/palette/723615/clairedelune
+        // Note: I had to specify the background color of the JButton
+        // in the button class itself. I'd like to either remove the
+        // background color option entirely or set the default in the class
+        // itself to fgColor
+        // The colourlovers link shows the palette from dark to light
+        Color bgColor = new Color(179,129,132);
+        Color fgColor = new Color(240,180,158);
+        
+        // Set up output subpanel
          JPanel outputPanel = new JPanel();
          outputPanel.setPreferredSize (new Dimension(280, 60));
-         outputPanel.setBackground (Color.green);
+         outputPanel.setBackground (fgColor);
          JLabel label1 = new JLabel ("OUTPUT GOES HERE");
          JTextField txtbox;
          txtbox = new JTextField(20);
@@ -42,7 +52,7 @@ public class Calculatore
          // Set up second subpanel
          JPanel subPanel2 = new JPanel();
          subPanel2.setPreferredSize (new Dimension(280, 230));
-         subPanel2.setBackground (Color.cyan);
+         subPanel2.setBackground (fgColor);
          JLabel label2 = new JLabel ("Two");
          //subPanel2.add (label2);
          
@@ -72,7 +82,7 @@ public class Calculatore
         
         // Set up primary panel
          JPanel primary = new JPanel();
-         primary.setBackground (Color.blue);
+         primary.setBackground (bgColor);
          primary.setPreferredSize (new Dimension (300, 320));
          primary.add (outputPanel);
          primary.add (subPanel2);
