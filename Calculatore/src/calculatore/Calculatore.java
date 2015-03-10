@@ -46,7 +46,7 @@ public class Calculatore
          JButton push = new JButton ("This button");
          
          subPanel2.add (push);
-         subPanel2.add (new Button());
+         subPanel2.add (new Button("Bill"));
          
         
         // Set up primary panel
