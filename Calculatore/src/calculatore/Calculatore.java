@@ -20,18 +20,20 @@ public class Calculatore
      */
     public static void main(String[] args)
     {
-        System.out.println("BOOBS!!!");
+        //System.out.println("BOOBS!!!");
         //COMMENTS GO LIEK DIS BRUH
         
         JFrame frame = new JFrame ("WINDOW TITLE");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         
         // Set up first subpanel
-         JPanel subPanel1 = new JPanel();
-         subPanel1.setPreferredSize (new Dimension(150, 100));
-         subPanel1.setBackground (Color.green);
-         JLabel label1 = new JLabel ("One");
-         subPanel1.add (label1);
+         JPanel outputPanel = new JPanel();
+         outputPanel.setPreferredSize (new Dimension(300, 50));
+         outputPanel.setBackground (Color.green);
+         JLabel label1 = new JLabel ("OUTPUT GOES HERE");
+         outputPanel.add (label1);
+         
+         
          // Set up second subpanel
          JPanel subPanel2 = new JPanel();
          subPanel2.setPreferredSize (new Dimension(150, 100));
@@ -42,7 +44,8 @@ public class Calculatore
         // Set up primary panel
          JPanel primary = new JPanel();
          primary.setBackground (Color.blue);
-         primary.add (subPanel1);
+         primary.setPreferredSize (new Dimension (200, 300));
+         primary.add (outputPanel);
          primary.add (subPanel2);
          frame.getContentPane().add(primary);
          frame.pack();
