@@ -38,21 +38,31 @@ public class Calculatore
          
          // Set up second subpanel
          JPanel subPanel2 = new JPanel();
-         subPanel2.setPreferredSize (new Dimension(180, 230));
+         subPanel2.setPreferredSize (new Dimension(240, 230));
          subPanel2.setBackground (Color.red);
          JLabel label2 = new JLabel ("Two");
-         subPanel2.add (label2);
+         //subPanel2.add (label2);
          
          JButton push = new JButton ("This button");
          
-         subPanel2.add (push);
-         subPanel2.add (new Button("Bill"));
-         
+         //subPanel2.add (push);
+         subPanel2.add (new Button("1"));
+         subPanel2.add (new Button("2"));
+         subPanel2.add (new Button("3"));
+         subPanel2.add (new Button("4"));
+         subPanel2.add (new Button("5"));
+         subPanel2.add (new Button("6"));
+         subPanel2.add (new Button("7"));
+         subPanel2.add (new Button("8"));
+         subPanel2.add (new Button("9"));
+         subPanel2.add (new Button("C"));
+         subPanel2.add (new Button("0"));
+         subPanel2.add (new Button("."));
         
         // Set up primary panel
          JPanel primary = new JPanel();
          primary.setBackground (Color.blue);
-         primary.setPreferredSize (new Dimension (200, 300));
+         primary.setPreferredSize (new Dimension (250, 300));
          primary.add (outputPanel);
          primary.add (subPanel2);
          frame.getContentPane().add(primary);
