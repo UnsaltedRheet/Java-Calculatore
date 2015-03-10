@@ -30,41 +30,54 @@ public class Calculatore
         
         // Set up first subpanel
          JPanel outputPanel = new JPanel();
-         outputPanel.setPreferredSize (new Dimension(180, 50));
+         outputPanel.setPreferredSize (new Dimension(280, 60));
          outputPanel.setBackground (Color.green);
          JLabel label1 = new JLabel ("OUTPUT GOES HERE");
+         JTextField txtbox;
+         txtbox = new JTextField(20);
+         outputPanel.add (txtbox);
          outputPanel.add (label1);
          
          
          // Set up second subpanel
          JPanel subPanel2 = new JPanel();
-         subPanel2.setPreferredSize (new Dimension(240, 230));
-         subPanel2.setBackground (Color.red);
+         subPanel2.setPreferredSize (new Dimension(280, 230));
+         subPanel2.setBackground (Color.cyan);
          JLabel label2 = new JLabel ("Two");
          //subPanel2.add (label2);
          
          JButton push = new JButton ("This button");
          
          //subPanel2.add (push);
+         subPanel2.add (new Button("Clear"));
+         subPanel2.add (new Button("+/-"));
+         subPanel2.add (new Button("%"));
+         subPanel2.add (new Button("/"));
          subPanel2.add (new Button("1"));
          subPanel2.add (new Button("2"));
          subPanel2.add (new Button("3"));
+         subPanel2.add (new Button("*"));
          subPanel2.add (new Button("4"));
          subPanel2.add (new Button("5"));
          subPanel2.add (new Button("6"));
+         subPanel2.add (new Button("-"));
          subPanel2.add (new Button("7"));
          subPanel2.add (new Button("8"));
          subPanel2.add (new Button("9"));
-         subPanel2.add (new Button("C"));
+         subPanel2.add (new Button("+"));
+         subPanel2.add (new Button("<-"));
          subPanel2.add (new Button("0"));
          subPanel2.add (new Button("."));
+         subPanel2.add (new Button("="));
         
         // Set up primary panel
          JPanel primary = new JPanel();
          primary.setBackground (Color.blue);
-         primary.setPreferredSize (new Dimension (250, 300));
+         primary.setPreferredSize (new Dimension (300, 320));
          primary.add (outputPanel);
          primary.add (subPanel2);
+         JLabel copyright = new JLabel ("© Nick and Rhett - 2015");
+         primary.add (copyright);
          frame.getContentPane().add(primary);
          frame.pack();
          frame.setVisible(true);

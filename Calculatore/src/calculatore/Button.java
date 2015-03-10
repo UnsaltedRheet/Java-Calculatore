@@ -31,7 +31,7 @@ public class Button extends JPanel
         add (button);
         
         setPreferredSize (new Dimension(65, 40));
-        setBackground (Color.red);
+        setBackground (Color.cyan);
    }
    //*****************************************************************
    //  Represents a listener for button push (action) events.
