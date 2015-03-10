@@ -20,10 +20,11 @@ public class Calculatore
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
         System.out.println("BOOBS!!!");
         //COMMENTS GO LIEK DIS BRUH
         
+        JFrame frame = new JFrame ("WINDOW TITLE");
+        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         
         
     }
