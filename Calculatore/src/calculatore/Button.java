@@ -17,24 +17,19 @@ import javax.swing.*;
  */
 public class Button extends JPanel
 {
-      private int count;
-      private JButton push;
-      private JLabel label;
-      
-      //-----------------------------------------------------------------
-      //  Constructor: Sets up the GUI.
-      //-----------------------------------------------------------------
-      public Button ()
-      {
-        count = 0;
-        
+    private JButton push;
+
+    //-----------------------------------------------------------------
+    //  Constructor: Sets up the GUI.
+    //-----------------------------------------------------------------
+    public Button ()
+    {    
         push = new JButton ();
         push.addActionListener (new ButtonListener());
-        label = new JLabel ("Pushes: " + count);
         add (push);
-        add (label);
+        
         setPreferredSize (new Dimension(300, 40));
-        setBackground (Color.cyan);
+        
    }
    //*****************************************************************
    //  Represents a listener for button push (action) events.
@@ -43,8 +38,7 @@ public class Button extends JPanel
    {
        public void actionPerformed (ActionEvent event)
        {
-            count++;
-            label.setText("Pushes: " + count);
+            
        }
        
    }
