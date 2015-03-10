@@ -18,7 +18,7 @@ import javax.swing.*;
 public class Button extends JPanel
 {
     private JButton push;
-
+    private String name;
     //-----------------------------------------------------------------
     //  Constructor: Sets up the GUI.
     //-----------------------------------------------------------------
