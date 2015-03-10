@@ -24,6 +24,7 @@ public class Calculatore
         //COMMENTS GO LIEK DIS BRUH
         
         JFrame frame = new JFrame ("WINDOW TITLE");
+        frame.setResizable(false);
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         
         // Set up first subpanel
