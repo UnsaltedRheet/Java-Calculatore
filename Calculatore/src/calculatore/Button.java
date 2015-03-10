@@ -17,7 +17,7 @@ import javax.swing.*;
  */
 public class Button extends JPanel
 {
-      private int number;
+      private int count;
       private JButton push;
       private JLabel label;
       
@@ -35,5 +35,17 @@ public class Button extends JPanel
         add (label);
         setPreferredSize (new Dimension(300, 40));
         setBackground (Color.cyan);
+   }
+   //*****************************************************************
+   //  Represents a listener for button push (action) events.
+   //*****************************************************************
+   private class ButtonListener implements ActionListener
+   {
+       public void actionPerformed (ActionEvent event)
+       {
+            count++;
+            label.setText("Pushes: " + count);
+       }
+       
    }
 }

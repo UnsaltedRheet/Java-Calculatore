@@ -13,12 +13,6 @@ import javax.swing.*;
  * @author Nicholas & Rhett
  */
 
-class Button extends JPanel
-{
-    
-}
-
-
 public class Calculatore
 {
 
@@ -52,6 +46,7 @@ public class Calculatore
          JButton push = new JButton ("This button");
          
          subPanel2.add (push);
+         subPanel2.add (new Button());
          
         
         // Set up primary panel
