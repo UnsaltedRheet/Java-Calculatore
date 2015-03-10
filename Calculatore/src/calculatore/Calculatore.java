@@ -12,6 +12,9 @@ import javax.swing.*;
  *
  * @author Nicholas & Rhett
  */
+
+
+
 public class Calculatore
 {
 
@@ -41,6 +44,11 @@ public class Calculatore
          subPanel2.setBackground (Color.red);
          JLabel label2 = new JLabel ("Two");
          subPanel2.add (label2);
+         
+         JButton push = new JButton ("This button");
+         
+         subPanel2.add (push);
+         
         
         // Set up primary panel
          JPanel primary = new JPanel();
@@ -51,7 +59,10 @@ public class Calculatore
          frame.getContentPane().add(primary);
          frame.pack();
          frame.setVisible(true);
-    }
+         
+    } 
+         
+   
     
 }
 
